@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-mini: 0.94rem;
+  --font-size-lg: 1.13rem;
+  --font-size-11xl: 1.88rem;
+  --font-size-sm: 0.88rem;
+  --font-size-xl: 1.25rem;
+  --font-size-6xl: 1.56rem;
+  --font-size-base: 1rem;
+  --font-size-xs: 0.75rem;
+  --font-size-51xl: 4.38rem;
+  --font-size-21xl: 2.5rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-2xl: 1.31rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslategray: #3c342e;
+  --color-navajowhite: #fedd9a;
+  --color-wheat-100: #e3d2ad;
+  --color-wheat: #d9ccb0;
+  --color-gainsboro: #d9d9d9;
+  --color-gainsboro-100: rgba(217, 217, 217, 0);
+  --color-silver: #c3c4bd;
+  --color-silver-100: #b9b9b9;
+  --color-black: #000;
+  --color-gray: rgba(255, 255, 255, 0);
+
+  /* Gaps */
+  --gap-mini: 0.94rem;
+  --gap-68xl: 5.44rem;
+  --gap-22xl: 2.56rem;
+  --gap-14xl: 2.06rem;
+  --gap-xs: 0.75rem;
+  --gap-21xl: 2.5rem;
+  --gap-smi: 0.81rem;
+
+  /* Paddings */
+  --padding-xl: 1.25rem;
+  --padding-2xl: 1.31rem;
+  --padding-395xl: 25.88rem;
+  --padding-17xl: 2.25rem;
+  --padding-12xl: 1.94rem;
+  --padding-4xl: 1.44rem;
+  --padding-61xl: 5rem;
+  --padding-3xs: 0.63rem;
+  --padding-15xl: 2.13rem;
+  --padding-79xl: 6.13rem;
+  --padding-5xs: 0.5rem;
+  --padding-36xl: 3.44rem;
+  --padding-3xl: 1.38rem;
+  --padding-23xl: 2.63rem;
+  --padding-xs: 0.75rem;
+  --padding-99xl: 7.38rem;
+  --padding-171xl: 11.88rem;
+  --padding-20xl: 2.44rem;
+  --padding-88xl: 6.69rem;
+  --padding-137xl: 9.75rem;
+  --padding-181xl: 12.5rem;
+  --padding-7xl: 1.63rem;
+  --padding-33xl: 3.25rem;
+  --padding-13xl: 2rem;
+  --padding-11xl: 1.88rem;
+  --padding-mini: 0.94rem;
+  --padding-21xl: 2.5rem;
+  --padding-16xl: 2.19rem;
+  --padding-99xl: 7.38rem;
+  --padding-171xl: 11.88rem;
+  --padding-20xl: 2.44rem;
+  --padding-181xl: 12.5rem;
+  --padding-88xl: 6.69rem;
+  --padding-137xl: 9.75rem;
+  --padding-xs: 0.75rem;
+
+  /* border radiuses */
+  --br-3xs: 10px;
+  --br-xl: 20px;
+  --br-mid: 17px;
+  --drop-shadow: 0px 4px 47px 3px rgba(0, 0, 0, 0.25);
+}

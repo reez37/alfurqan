@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./donate.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="donate6">
+      <div class="iphone-14-5">
+        <div class="logo-parent2">
+          <div class="logo4">Peace Residency AL-Furkhan</div>
+          <img class="vector-icon8" alt="" src="./public/vector3.svg" onclick="toggleMenu()"/>
+        </div>
+        <div class="home-container" id="home-parent" style="display: none;">
+          <a class="home5" id="home_nav_btn" href="./index.html">HOME</a>
+          <a
+            class="home5"
+            href="./Vision.html"
+            id="vision_nav_btn"
+            tabindex="{10}"
+            >VISION</a
+          >
+          <a
+            class="home5"
+            href="./EXPENSES.html"
+            id="expenses_nav_btn"
+            tabindex="{30}"
+            >EXPENSES</a
+          >
+          <a class="home5" href="./Donate.html" id="donate_nav_btn" tabindex="{10}"
+            >DONATE</a
+          >
+          <a class="home5" href="./CONTACT.html" id="contact_nav_btn"
+            >CONTACT US</a
+          >
+        </div>
+        <div class="donate-frame">
+          <div class="donate8">DONATE</div>
+        </div>
+        <div class="south-karnataka-salafi-movemen-wrapper">
+          <div class="south-karnataka-salafi-container">
+            <p class="south-karnataka-salafi">
+              South Karnataka Salafi Movement Alekala Unit has been involved in
+              welfare activities related to Masjid, Madrasa and Dawah from the
+              past few years. There is no other source of income to run the
+              Masjid and Madrasa leaving the monthly donations given by like
+              minded people. S.K.S.M., Alekala Unit has planned to construct a
+              building so as to become a permanent source of income for the
+              smooth running of Thouheedi activities in this area.
+            </p>
+            <p class="south-karnataka-salafi">&nbsp;</p>
+            <p class="south-karnataka-salafi">
+              We humbly request you to donate as much as possible for this noble
+              project and ain Allah's pleasure by contributing through mind,
+              body and wealth.
+            </p>
+          </div>
+        </div>
+        <button class="check-detailed-expenses-wrapper">
+          <a class="check-detailed-expenses" href="./EXPENSES.html">Check Detailed Expenses</a>
+        </button>
+        <div class="paybtns">
+          <button class="paybtn"  onclick="payonline(1)" >Pay Online</button>
+          <button class="paybtn"   onclick="payonline(2)" >Bank Details</button>
+          <button class="paybtn"  onclick="payonline(3)">QR Code</button>
+        </div>
+
+         <!-- qr code -->
+        <div class="qrcodes" style="display: none;" id="qr">
+          <img  class="qrcode" alt="" src="./public/qr.jpeg" onclick="toggleMenu()"/>
+        </div>
+
+        <!-- bank details -->
+        <div class="acc" style="display: none;" id="bank">
+          <div class="accc">Holder Name: Masjid Al Furqan</div>
+          <div class="accc">Account Number: 7532500101761101</div>
+          <div class="accc">IFSC Code: KARB0000753</div>
+          <div class="accc">Branch: Thokottu - Ullala</div>
+        </div>
+
+        <!-- online transaction -->
+        <div style="display: none;" id="online">
+        <div class="frame-parent4">
+          <div class="select-an-amount-to-donate-wrapper">
+            <div class="select-an-amount">Select an amount to Donate</div>
+          </div>
+          <div class="frame-parent5">
+            <div class="full-sq-feet-donation-parent">
+              <div class="full-sq-feet">Full Sq Feet Donation</div>
+              <div class="frame-parent6">
+                <button class="wrapper" onclick="fullplus()">
+                  <div class="div2" >+</div>
+                </button>
+                <div class="rs-1700-wrapper">
+                  <div class="donate8" id="fulldonate">RS 0</div>
+                </div>
+                <button class="wrapper" onclick="fullminus()">
+                  <div class="div2" >-</div>
+                </button>
+              </div>
+            </div>
+            <div class="full-sq-feet-donation-parent">
+              <div class="full-sq-feet">Half Sq Feet Donation</div>
+              <div class="frame-parent7">
+                <button class="wrapper" onclick="halfplus()">
+                  <div class="div2" >+</div>
+                </button>
+                <div class="rs-850-wrapper">
+                  <div class="donate8" id="halfdonate">RS 0</div>
+                </div>
+                <button class="wrapper" onclick="halfplus()">
+                  <div class="div2" >-</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <input
+            class="frame-child"
+            type="number"
+            placeholder="Enter Other Amount"
+            id="inputm"
+            onkeyup="pay()"
+          />
+
+          <button class="pay-wrapper" id="razorpaym">
+            <div class="pay" id="paymentm" >PAY</div>
+          </button>
+        </div>
+      </div>
+        <div class="footer-container">
+          <footer class="footer3">
+            <div class="logo-parent3">
+              <div class="logo5">
+                <p class="south-karnataka-salafi">Peace Residency</p>
+                <p class="south-karnataka-salafi">AL-Furkhan</p>
+              </div>
+              <div class="quick-links-container">
+                <div class="quick-links2">QUICK LINKS</div>
+                <div class="nav-right2">
+                  <a class="home6">HOME</a>
+                  <a class="vision7" href="./Vision.html">VISION</a>
+                  <a class="expenses5" href="./EXPENSES.html">EXPENSES</a>
+                  <a class="donate9" href="/">DONATE</a>
+                  <a class="contact-us6" href="./CONTACT.html">CONTACT US</a>
+                </div>
+              </div>
+              <div class="vector-container">
+                <img class="vector-icon9" alt="" src="./public/vector.svg" />
+
+                <a class="cdcikdchdkhcdkh2" href="zivot.in">Alekala Ullala</a>
+                <img class="vector-icon10" alt="" src="./public/vector1.svg" />
+
+                <a class="a2" href="tel:+91 9845353129">+91 9845353129</a>
+                <img class="vector-icon11" alt="" src="./public/vector2.svg" />
+
+                <a class="duydieyd2" href="zivot.in">alfurqanpeace@gmail</a>
+              </div>
+            </div>
+            <div class="copyright-zivotin-frame">
+              <div class="copyright-zivotin2">© 2020 copyright : Zivot.in</div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="navbar1">
+        <img class="navbar-inner" alt="" src="./public/rectangle-10@2x.png" />
+
+        <div class="logo-parent4">
+          <div class="logo6">Peace Residency AL-Furkhan</div>
+          <div class="home-parent1">
+            <a class="home5" id="home_nav_btn" tabindex="{10}">HOME</a>
+            <a
+              class="home5"
+              href="./Vision.html"
+              id="vision_nav_btn"
+              tabindex="{10}"
+            >
+              VISION</a
+            >
+            <a
+              class="home5"
+              href="./EXPENSES.html"
+              id="expenses_nav_btn"
+              tabindex="{30}"
+              >EXPENSES</a
+            >
+            <a class="home5" href="/" id="donate_nav_btn" tabindex="{10}"
+              >DONATE</a
+            >
+            <a class="home5" href="./CONTACT.html" id="contact_nav_btn"
+              >CONTACT US</a
+            >
+          </div>
+          <img class="vector-icon12" alt="" src="./public/vector3.svg" />
+        </div>
+      </div>
+      <div class="hero1">
+        <div class="donate-wrapper1">
+          <div class="donate8">DONATE</div>
+        </div>
+        <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+      </div>
+      <div class="south-karnataka-salafi-movemen-container">
+        <div class="south-karnataka-salafi-container1">
+          <p class="south-karnataka-salafi">
+            South Karnataka Salafi Movement Alekala Unit has been involved in
+            welfare activities related to Masjid, Madrasa and Dawah from the
+            past few years. There is no other source of income to run the Masjid
+            and Madrasa leaving the monthly donations given by like minded
+            people. S.K.S.M., Alekala Unit has planned to construct a building
+            so as to become a permanent source of income for the smooth running
+            of Thouheedi activities in this area.
+          </p>
+          <p class="south-karnataka-salafi">&nbsp;</p>
+          <p class="south-karnataka-salafi">
+            We humbly request you to donate as much as possible for this noble
+            project and ain Allah's pleasure by contributing through mind, body
+            and wealth.
+          </p>
+        </div>
+      </div>
+      <button class="check-detailed-expenses-container">
+        <div class="check-detailed-expenses">Check Detailed Expenses</div>
+      </button>
+      <div class="rectangle-parent1">
+        <div class="frame-item"></div>
+        <input
+          class="frame-input"
+          id="pinput"
+          type="text"
+          onkeyup="pay()"
+          placeholder="Enter Other Amount"
+        />
+
+        <div class="full-sq-feet1">Full Sq Feet Donation</div>
+        <div class="half-sq-feet1">Half Sq Feet Donation</div>
+        <div id="plussec">
+        <button class="wrapper1" onclick="fullplus()">
+          <div class="div2" >+</div>
+        </button>
+        <div class="rs-1700-container">
+          <div class="donate8" id="donate8">RS 0</div>
+        </div>
+        <button class="wrapper2" onclick="fullminus()">
+          <div class="div2" >-</div>
+        </button>
+        </div>
+        <button class="wrapper3" onclick="halfplus()">
+          <div class="div2">+</div>
+        </button>
+        <div class="rs-850-container">
+          <div class="donate8" id="donate9">RS 0</div>
+        </div>
+        <button class="wrapper4" onclick="halfminus()">
+          <div class="div2">-</div>
+        </button>
+        <div class="select-an-amount-to-donate-container">
+          <div class="select-an-amount1" >Select an amount to Donate</div>
+        </div>
+        <button class="proceed-to-pay-rs-700-wrapper" id="razorpay">
+          <div class="proceed-to-pay" id="payment"  >Proceed To Pay </div>
+        </button>
+      </div>
+        <!-- q326589z945-62* -->
+      <div class="footer4">
+        <footer class="footer5">
+          <div class="logo-parent5">
+            <div class="logo7">Peace Residency AL-Furkhan</div>
+            <div class="quick-links-parent1">
+              <div class="quick-links3">QUICK LINKS</div>
+              <div class="nav-right3">
+                <a class="home6">HOME</a>
+                <a class="vision9" href="./Vision.html">VISION</a>
+                <a class="expenses5" href="./EXPENSES.html">EXPENSES</a>
+                <a class="donate9" href="/">DONATE</a>
+                <a class="contact-us8" href="./CONTACT.html">CONTACT US</a>
+              </div>
+            </div>
+            <div class="vector-parent1">
+              <img class="vector-icon9" alt="" src="./public/vector4.svg" />
+
+              <a class="cdcikdchdkhcdkh2" href="zivot.in">cdcikdchdkhcdkh</a>
+              <img class="vector-icon10" alt="" src="./public/vector5.svg" />
+
+              <a class="a2" href="tel:+91 7975034967">353454334</a>
+              <img class="vector-icon11" alt="" src="./public/vector6.svg" />
+
+              <a class="duydieyd2" href="zivot.in">@duydieyd</a>
+            </div>
+          </div>
+          <div class="copyright-zivotin-wrapper1">
+            <div class="copyright-zivotin2">© 2020 copyright : Zivot.in</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      amount = 0;
+      countf = 0;
+      function fullplus() {
+        var res = document.getElementById("donate8");   
+        var resm = document.getElementById("fulldonate");   
+        countf = countf + 1700;
+        res.innerHTML = "RS "+countf
+        resm.innerHTML = "RS "+countf
+        pay()
+  
+      }
+      function fullminus() {
+        var res = document.getElementById("donate8");   
+        var resm = document.getElementById("fulldonate");   
+        if(countf == 0){
+          countf =0;
+        }
+        else{
+          countf = countf - 1700;
+        }
+        
+        res.innerHTML = "RS "+countf
+        resm.innerHTML = "RS "+countf
+        pay()
+      }
+  
+      counth = 0;
+      function halfplus() {
+        var res = document.getElementById("donate9");   
+        var resm = document.getElementById("halfdonate");   
+        counth = counth + 850;
+        res.innerHTML = "RS "+ counth
+        resm.innerHTML = "RS "+ counth
+        pay()
+      }
+      function halfminus() {
+        var res = document.getElementById("donate9");   
+        var resm = document.getElementById("halfdonate");   
+        if(counth == 0){
+          counth =0;
+        }
+        else{
+          counth = counth - 850;
+        }
+        
+        res.innerHTML ="RS "+ counth
+        resm.innerHTML ="RS "+ counth
+        pay()
+      }
+  
+      function pay(){
+        let input = document.getElementById("pinput").value
+        let inputm = document.getElementById("inputm").value
+       input = inputm
+        let pay = countf + counth;
+        console.log(inputm)
+  
+        if(inputm ){
+          amount = input
+          payment.innerHTML = "Proceed To Pay RS " + input
+          paymentm.innerHTML = "Proceed To Pay RS " + inputm
+        }
+        else{
+          amount = pay
+          payment.innerHTML = "Proceed To Pay RS " + pay
+          paymentm.innerHTML = "Proceed To Pay RS " + pay
+        }
+        
+  
+  
+      }
+      
+  
+    </script>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+     
+    document.getElementById('razorpay').onclick = async function(e){
+      if(amount==0){
+        alert("please add amount")
+      }
+      else{
+        let res = await fetch("http://localhost:3000/payment",{
+          method: "POST",
+          headers:{
+              "Content-Type":"application/json"
+          },
+          body: JSON.stringify({
+              amount:amount*100
+          })
+      })
+      let orderdata = await res.json();
+  
+      console.log(orderdata)
+      var options = {
+          "key": "rzp_test_wYH4uoZA1PluxI", // Enter the Key ID generated from the Dashboard
+          "amount": orderdata.orders.amount,  // Use the amount received from the server
+          "currency": "INR",
+          "order_id": orderdata.id,  //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+          "handler": function (response){
+              alert(orderdata.razorpay_payment_id);
+              alert(response.razorpay_order_id);
+              alert(response.razorpay_signature)
+          },
+          "prefill": {
+              "name": "Gaurav Kumar",
+              "email": "gaurav.kumar@example.com",
+              "contact": "9000090000"
+          },
+          "notes": {
+              "address": "Razorpay Corporate Office"
+          },
+          "theme": {
+              "color": "#D9CCB0"
+          }
+      };
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+      e.preventDefault();
+  }
+      }
+    
+        
+    
+    </script>
+    <script>
+     
+    document.getElementById('razorpaym').onclick = async function(e){
+      if(amount==0){
+        alert("please add amount")
+      }
+      else{
+        let res = await fetch("http://localhost:3000/payment",{
+          method: "POST",
+          headers:{
+              "Content-Type":"application/json"
+          },
+          body: JSON.stringify({
+              amount:amount*100
+          })
+      })
+      let orderdata = await res.json();
+  
+      console.log(orderdata)
+      var options = {
+          "key": "rzp_test_wYH4uoZA1PluxI", // Enter the Key ID generated from the Dashboard
+          "amount": orderdata.orders.amount,  // Use the amount received from the server
+          "currency": "INR",
+          "order_id": orderdata.id,  //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+          "handler": function (response){
+              alert(orderdata.razorpay_payment_id);
+              alert(response.razorpay_order_id);
+              alert(response.razorpay_signature)
+          },
+          "prefill": {
+              "name": "Gaurav Kumar",
+              "email": "gaurav.kumar@example.com",
+              "contact": "9000090000"
+          },
+          "notes": {
+              "address": "Razorpay Corporate Office"
+          },
+          "theme": {
+              "color": "#D9CCB0"
+          }
+      };
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+      e.preventDefault();
+  }
+      }
+    
+        
+    
+    </script>
+  </body>
+  <script>
+    function toggleMenu() {
+      var menuBox = document.getElementById("home-parent");    
+      if(menuBox.style.display == "none") { 
+        menuBox.style.display = "flex";
+      }
+      else { 
+        menuBox.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    var online = document.getElementById("online"); 
+    var bank = document.getElementById("bank"); 
+    var qr = document.getElementById("qr"); 
+    function payonline (num){
+        if(num == 1){
+          online.style.display = "block"
+          bank.style.display = "none"
+          qr.style.display = "none"
+
+        }
+        else if(num == 2){
+          bank.style.display = "block"
+          online.style.display = "none"
+          qr.style.display = "none"
+        }
+        else if(num == 3){
+          qr.style.display = "block"
+          bank.style.display = "none"
+          online.style.display = "none"
+        }
+    }
+  </script>
+  
+</html>
